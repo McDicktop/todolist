@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" href="styles.css">
+  <title>Todolist</title>
+</head>
+
+<body>
+  <div class="coverlayer"></div>
+
+  <header>
+    <div class="headerBtns" id="backBtn"></div>
+    <div class="headerBtns" id="removeListBtn"></div>
+    <div class="headerBtns" id="removeTaskBtn"></div>
+    <div class="headerText" id="headerText"></div>
+  </header>
+
+  <main class="main">
+
+    <div class="undoneTasks"></div>
+    <div class="doneTasks"></div>
+
+    <div class="formWrapper" id="newListForm">
+      <div class="formTitle">Add new list</div>
+      <div class="formTitle"><input class="formName" type="text" id="newListInput"></input></div>
+      <button class="formBtns" id="newListConfirm">Ok</button>
+      <button class="formBtns" id="newListCancel">Cancel</button>
+    </div>
+    <div class="formWrapper" id="editListForm">
+      <div class="formTitle">Edit list</div>
+      <div class="formTitle"><input class="formName" type="text" id="editListInput"></input></div>
+      <button class="formBtns" id="editListConfirm">Ok</button>
+      <button class="formBtns" id="editListCancel">Cancel</button>
+      <button class="formBtns" id="editListRemove">Delete</button>
+    </div>
+
+    <div class="formWrapper" id="newTaskForm">
+      <div class="formTitle">Add new note</div>
+      <div class="formTitle"><input class="formName" type="text" id="newTaskInput"></input></div>
+      <textarea class="textarea" id="newTextArea" cols="40" rows="10" placeholder="Note info"></textarea>
+      <button class="formBtns" id="newTaskConfirm">Ok</button>
+      <button class="formBtns" id="newTaskCancel">Cancel</button>
+    </div>
+    <div class="formWrapper" id="editTaskForm">
+      <div class="formTitle">Edit note</div>
+      <div class="formTitle"><input class="formName" type="text" id="editTaskInput"></input></div>
+      <textarea class="textarea" id="editTextArea" cols="40" rows="10" placeholder="Note info"></textarea>
+      <button class="formBtns" id="editTaskConfirm">Ok</button>
+      <button class="formBtns" id="editTaskCancel">Cancel</button>
+      <button class="formBtns" id="editTaskRemove">Delete</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footerBtns" id="addList"></div>
+    <div class="footerBtns" id="addTask"></div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

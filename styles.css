@@ -1,0 +1,219 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: calc(var(--vh, 1vh) * 100);
+    font-size: 2.5vh;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+header {
+    background-color: #aeedf3;
+    color: #525657;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    background-color: #e9f4f5;
+    color: #525657;
+}
+
+footer {
+    background-color: #e9f4f5;
+    color: #525657;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.headerBtns {
+    background-size: 4vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    height: 5vh;
+    width: 5vh;
+    display: inline-block;
+    opacity: .6;
+}
+
+.headerBtns:hover {
+    opacity: .2;
+}
+
+#backBtn {
+    background-image: url('./img/back.png');
+}
+
+#removeListBtn {
+    background-image: url('./img/remove.png');
+    z-index: 20;
+}
+
+#removeTaskBtn {
+    background-image: url('./img/remove.png');
+}
+
+.headerText {
+    display: inline-block;
+    width: 70vw;
+    font-weight: bold;
+    margin-left: 20px;
+
+    /* Правило, если не помещается текст */
+}
+
+
+.footerBtns {
+    display: inline-block;
+    height: 8vh;
+    width: 8vh;
+    background-size: 3vh;
+    background-position-x: center;
+    background-position-y: center;
+    background-image: url(./img/add.png);
+    background-repeat: no-repeat;
+    border-radius: 80px;
+    position: absolute;
+    right: 2vw;
+    background-color: #aeedf3;
+    /* opacity: .6; */
+}
+
+.footerBtns:hover {
+    opacity: .6;
+}
+
+.itemWrapper {
+    border-bottom: 1px solid rgb(75, 105, 117);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name {
+    color: rgb(75, 105, 117);
+    display: inline-block;
+    cursor: pointer;
+    width: 90vw;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.name:hover {
+    opacity: .6;
+}
+
+.editBtn {
+    background-image: url('./img/edit.png');
+    background-size: cover;
+    width: 4vh;
+    height: 4vh;
+    display: inline-block;
+    opacity: .4;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.editBtn:hover {
+    opacity: .8;
+}
+
+.formWrapper {
+    position: absolute;
+    text-align: center;
+    width: 80vw;
+    left: calc((100% - 80vw) / 2);
+    bottom: 45%;
+    background-color: #aeedf3;
+    z-index: 20;
+    font-size: 2.5vh;
+    border-radius: 6px;
+    padding-bottom: 40px;
+}
+
+#newListForm {
+    height: 20%;
+}
+
+#editListForm {
+    height: 20%;
+}
+
+#newTaskform {
+    height: 40%;
+}
+
+#editTaskform {
+    height: 40%;
+}
+
+.textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 1.5vh;
+}
+
+.formTitle {
+    padding-top: 2vh;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.formName {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #aeedf3;
+    border-bottom: 1px solid rgb(75, 105, 117);
+
+    color: #525657;
+
+    display: block;
+}
+
+.formBtns {
+    width: 10vh;
+    height: 5vh;
+    font-size: 2.5vh;
+    display: inline-block;
+    border: none;
+}
+
+.coverlayer {
+    position: absolute;
+    border: 1px solid black;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #767777;
+    opacity: .4;
+    z-index: 10;
+}
+
+.checkbox {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    float: right;
+    margin-top: 14px;
+    margin-right: 10px;
+}
